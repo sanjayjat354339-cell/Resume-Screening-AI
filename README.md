@@ -3,7 +3,7 @@
 **Live deployed Resume Screening AI that classifies resumes into job roles using NLP and Machine Learning.**
 
 🚀 **Live Demo:**  
-👉 https://your-render-link.onrender.com  
+👉 https://resume-screening-ai-a2fn.onrender.com/
 
 ---
 
