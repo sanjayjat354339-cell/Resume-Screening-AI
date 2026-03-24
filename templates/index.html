@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Screening AI</title>
+    <style>
+        .error {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fef2f2;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #dc2626;
+            color: #dc2626;
+            font-size: 18px;
+}
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #2563eb;
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 15px;
+            font-size: 14px;
+            border: 2px solid #2563eb;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #2563eb;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #1d4ed8;
+        }
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #2563eb;
+        }
+        .category {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+        .confidence {
+            font-size: 18px;
+            color: #059669;
+            margin-top: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎯 Resume Screening AI</h1>
+    <p class="subtitle">
+        Paste your resume below and AI will 
+        predict the job category!
+    </p>
+
+    <form action="/predict" method="POST">
+        <textarea 
+            name="resume" 
+            placeholder="Paste your resume text here...">
+        </textarea>
+        <button type="submit">
+            🔍 Analyze Resume
+        </button>
+    </form>
+    <!-- Show error if exists -->
+    {% if error %}
+    <div class="error">
+        {{ error }}
+    </div>
+    {% endif %}
+
+    <!-- Show result if prediction exists -->
+    {% if prediction %}
+    <div class="result">
+        <p>✅ Predicted Job Category:</p>
+        <p class="category">{{ prediction }}</p>
+        <p class="confidence">
+            Confidence: {{ confidence }}%
+        </p>
+    </div>
+    {% endif %}
+
+</body>
+</html>
