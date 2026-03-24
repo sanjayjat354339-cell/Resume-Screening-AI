@@ -61,12 +61,16 @@ cd Resume-Screening-AI
 pip install -r requirements.txt
 python app.py
 ```
+---
 
-🙋‍♂️ Author
-Sanjay
+## 👨‍💻 Author
 
-Aspiring AI/ML Engineer 🚀
+**Sanjay**  
+Aspiring AI/ML Engineer 🚀  
 
-⭐ Support
+---
 
-Give this project a ⭐ if you like it!
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
