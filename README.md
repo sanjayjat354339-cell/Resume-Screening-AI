@@ -66,5 +66,7 @@ python app.py
 Sanjay
 
 Aspiring AI/ML Engineer 🚀
+
 ⭐ Support
+
 Give this project a ⭐ if you like it!
