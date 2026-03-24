@@ -61,11 +61,6 @@ cd Resume-Screening-AI
 pip install -r requirements.txt
 python app.py
 ```
-💡 Future Improvements
-PDF resume upload
-Better UI
-Deep learning models (BERT)
-
 
 🙋‍♂️ Author
 Sanjay
